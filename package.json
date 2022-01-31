@@ -1,0 +1,25 @@
+{
+  "name": "develop-module-ts",
+  "version": "1.0.0",
+  "description": "Basic template for developing modules with TypeScript.",
+  "main": "dist/prod.js",
+  "scripts": {
+    "start": "run-s clean build",
+    "build": "webpack-cli --mode=production --config webpack.prod.ts",
+    "clean": "node -e 'fs.rmSync(`dist`, {recursive:true, force:true})';"
+  },
+  "author": "DongHeon Lee <niche3600@gmail.com> (https://github.com/leeddhh)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/webpack": "^5.28.0",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
